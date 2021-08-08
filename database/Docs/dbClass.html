@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module dbClass</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>dbClass</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cdev%5Ccs411%5Clittlelearners%5Cdatabase%5Cdbclass.py">c:\dev\cs411\littlelearners\database\dbclass.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="dbTable.html#Table">dbTable.Table</a>(<a href="abc.html#ABC">abc.ABC</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="dbClass.html#Class">Class</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Class">class <strong>Class</strong></a>(<a href="dbTable.html#Table">dbTable.Table</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Class">Class</a>(cnx)<br>
+&nbsp;<br>
+Base&nbsp;table&nbsp;class&nbsp;for&nbsp;modulating&nbsp;queries<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="dbClass.html#Class">Class</a></dd>
+<dd><a href="dbTable.html#Table">dbTable.Table</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Class-__init__"><strong>__init__</strong></a>(self, cnx)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Class-add"><strong>add</strong></a>(self, name, teacherName)</dt><dd><tt>#Add&nbsp;new&nbsp;class&nbsp;to&nbsp;database&nbsp;with&nbsp;name&nbsp;and&nbsp;teachername,&nbsp;returns&nbsp;id&nbsp;of&nbsp;new&nbsp;class</tt></dd></dl>
+
+<dl><dt><a name="Class-get"><strong>get</strong></a>(self, name, teacher_name)</dt><dd><tt>#Get&nbsp;all&nbsp;fields&nbsp;by&nbsp;name,&nbsp;teacher_name</tt></dd></dl>
+
+<dl><dt><a name="Class-getClassName"><strong>getClassName</strong></a>(self, id)</dt><dd><tt>#Get&nbsp;class&nbsp;name&nbsp;by&nbsp;id</tt></dd></dl>
+
+<dl><dt><a name="Class-getTeacherName"><strong>getTeacherName</strong></a>(self, id)</dt><dd><tt>#Get&nbsp;teacher&nbsp;name&nbsp;by&nbsp;id</tt></dd></dl>
+
+<dl><dt><a name="Class-setClassName"><strong>setClassName</strong></a>(self, id, newValue)</dt><dd><tt>#Set&nbsp;classname&nbsp;as&nbsp;newvalue&nbsp;for&nbsp;id</tt></dd></dl>
+
+<dl><dt><a name="Class-setTeacherName"><strong>setTeacherName</strong></a>(self, id, newValue)</dt><dd><tt>#Set&nbsp;teachername&nbsp;as&nbsp;newvalue&nbsp;for&nbsp;id</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<hr>
+Methods inherited from <a href="dbTable.html#Table">dbTable.Table</a>:<br>
+<dl><dt><a name="Class-clause"><strong>clause</strong></a>(self, fields, _type, delim)</dt><dd><tt>#Construct&nbsp;clauses<br>
+#Parameters&nbsp;-&nbsp;fields,&nbsp;type&nbsp;from&nbsp;helper,&nbsp;and&nbsp;delimiter<br>
+#Return&nbsp;-&nbsp;entire&nbsp;clause&nbsp;as&nbsp;string</tt></dd></dl>
+
+<dl><dt><a name="Class-formatDateTime"><strong>formatDateTime</strong></a>(self, dateTime)</dt><dd><tt>#Format&nbsp;date&nbsp;and&nbsp;time<br>
+#Parameters&nbsp;-&nbsp;datetime&nbsp;object<br>
+#Return&nbsp;-&nbsp;string&nbsp;in&nbsp;format&nbsp;M/D/Y&nbsp;H:M:S</tt></dd></dl>
+
+<dl><dt><a name="Class-getAll"><strong>getAll</strong></a>(self)</dt><dd><tt>#Get&nbsp;all&nbsp;fields&nbsp;in&nbsp;all&nbsp;tuples<br>
+#Parameters&nbsp;-&nbsp;<br>
+#Return&nbsp;-&nbsp;returns&nbsp;all&nbsp;records&nbsp;as&nbsp;list&nbsp;of&nbsp;tuples</tt></dd></dl>
+
+<dl><dt><a name="Class-getByID"><strong>getByID</strong></a>(self, id)</dt><dd><tt>#Get&nbsp;all&nbsp;table&nbsp;fields&nbsp;for&nbsp;a&nbsp;specific&nbsp;tuple&nbsp;by&nbsp;id<br>
+#Parameters&nbsp;-&nbsp;tuple&nbsp;id<br>
+#Return&nbsp;-&nbsp;all&nbsp;fields&nbsp;in&nbsp;tuple&nbsp;as&nbsp;python&nbsp;tuple</tt></dd></dl>
+
+<dl><dt><a name="Class-getField"><strong>getField</strong></a>(self, field, whereFields=(), values=())</dt><dd><tt>#Get&nbsp;one&nbsp;field&nbsp;for&nbsp;multiple&nbsp;tuples<br>
+#Parameters&nbsp;-&nbsp;required&nbsp;field&nbsp;names&nbsp;and&nbsp;optional&nbsp;where&nbsp;fields&nbsp;and&nbsp;values<br>
+#Return&nbsp;-&nbsp;returns&nbsp;list&nbsp;of&nbsp;tuples&nbsp;if&nbsp;record&nbsp;exists,&nbsp;else&nbsp;returns&nbsp;empty&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="Class-getFieldByID"><strong>getFieldByID</strong></a>(self, id, field)</dt><dd><tt>#Get&nbsp;one&nbsp;field&nbsp;for&nbsp;specific&nbsp;tuple<br>
+#Parameters&nbsp;-&nbsp;tuple&nbsp;id&nbsp;and&nbsp;required&nbsp;field&nbsp;name<br>
+#Return&nbsp;-&nbsp;returns&nbsp;field&nbsp;if&nbsp;tuple&nbsp;exists,&nbsp;else&nbsp;returns&nbsp;None&nbsp;type</tt></dd></dl>
+
+<dl><dt><a name="Class-getFields"><strong>getFields</strong></a>(self, selectFields=('*',), whereFields=(), values=())</dt><dd><tt>#Get&nbsp;multiple&nbsp;fields&nbsp;for&nbsp;multiple&nbsp;tuples<br>
+#Parameters&nbsp;-&nbsp;tuple&nbsp;id&nbsp;and&nbsp;required&nbsp;fields<br>
+#Return&nbsp;-&nbsp;returns&nbsp;fields&nbsp;as&nbsp;a&nbsp;tuple&nbsp;if&nbsp;record&nbsp;exists,&nbsp;else&nbsp;returns&nbsp;empty&nbsp;tuple</tt></dd></dl>
+
+<dl><dt><a name="Class-getFieldsByID"><strong>getFieldsByID</strong></a>(self, id, fields=('*',))</dt><dd><tt>#Get&nbsp;multiple&nbsp;fields&nbsp;for&nbsp;specific&nbsp;tuple<br>
+#Parameters&nbsp;-&nbsp;tuple&nbsp;id&nbsp;and&nbsp;required&nbsp;fields<br>
+#Return&nbsp;-&nbsp;returns&nbsp;fields&nbsp;as&nbsp;a&nbsp;tuple&nbsp;if&nbsp;record&nbsp;exists,&nbsp;else&nbsp;returns&nbsp;empty&nbsp;tuple</tt></dd></dl>
+
+<dl><dt><a name="Class-getFirst"><strong>getFirst</strong></a>(self, data, single)</dt><dd><tt>#Return&nbsp;first&nbsp;entry&nbsp;in&nbsp;the&nbsp;tuple&nbsp;of&nbsp;the&nbsp;length&nbsp;is&nbsp;one&nbsp;instead&nbsp;of&nbsp;returning&nbsp;a&nbsp;tuple&nbsp;of&nbsp;length&nbsp;1<br>
+#Parameters&nbsp;-&nbsp;list&nbsp;or&nbsp;tuple&nbsp;returned&nbsp;from&nbsp;mysql&nbsp;connector&nbsp;and&nbsp;boolean&nbsp;value,&nbsp;set&nbsp;true&nbsp;for&nbsp;single&nbsp;object,&nbsp;false&nbsp;for&nbsp;tuple<br>
+#Return&nbsp;-&nbsp;returns&nbsp;first&nbsp;object&nbsp;or&nbsp;tuple,&nbsp;unless&nbsp;original&nbsp;data&nbsp;was&nbsp;empty&nbsp;in&nbsp;which&nbsp;case&nbsp;this&nbsp;returns&nbsp;None&nbsp;or&nbsp;empty&nbsp;tuple</tt></dd></dl>
+
+<dl><dt><a name="Class-getID"><strong>getID</strong></a>(self, values)</dt><dd><tt>#Get&nbsp;ID&nbsp;of&nbsp;a&nbsp;tuple&nbsp;from&nbsp;primary&nbsp;key<br>
+#Parameters&nbsp;-&nbsp;primary&nbsp;key&nbsp;as&nbsp;tuple<br>
+#Return&nbsp;-&nbsp;returns&nbsp;id&nbsp;if&nbsp;tuple&nbsp;exists,&nbsp;else&nbsp;returns&nbsp;None&nbsp;type</tt></dd></dl>
+
+<dl><dt><a name="Class-remove"><strong>remove</strong></a>(self, id)</dt><dd><tt>#Remove&nbsp;tuple&nbsp;by&nbsp;ID<br>
+#Parameters&nbsp;-&nbsp;tuple&nbsp;id<br>
+#Return&nbsp;-&nbsp;returns&nbsp;true&nbsp;unless&nbsp;exception&nbsp;is&nbsp;thrown</tt></dd></dl>
+
+<dl><dt><a name="Class-removeAll"><strong>removeAll</strong></a>(self, whereFields=(), values=())</dt><dd><tt>#Remove&nbsp;all&nbsp;tuples&nbsp;matching&nbsp;where&nbsp;clause.&nbsp;&nbsp;Default&nbsp;removes&nbsp;all&nbsp;tuples<br>
+#Parameters&nbsp;-&nbsp;optional&nbsp;where&nbsp;fields<br>
+#Return&nbsp;-&nbsp;returns&nbsp;true&nbsp;unless&nbsp;exception&nbsp;is&nbsp;thrown</tt></dd></dl>
+
+<dl><dt><a name="Class-selectClause"><strong>selectClause</strong></a>(self, fields)</dt><dd><tt>#Clause&nbsp;helper<br>
+#Parameters&nbsp;-&nbsp;fields&nbsp;to&nbsp;be&nbsp;included&nbsp;in&nbsp;the&nbsp;clause<br>
+#Return&nbsp;-&nbsp;entire&nbsp;clause&nbsp;as&nbsp;string</tt></dd></dl>
+
+<dl><dt><a name="Class-setClause"><strong>setClause</strong></a>(self, fields)</dt><dd><tt>#Clause&nbsp;helper<br>
+#Parameters&nbsp;-&nbsp;fields&nbsp;to&nbsp;be&nbsp;included&nbsp;in&nbsp;the&nbsp;clause<br>
+#Return&nbsp;-&nbsp;entire&nbsp;clause&nbsp;as&nbsp;string</tt></dd></dl>
+
+<dl><dt><a name="Class-setField"><strong>setField</strong></a>(self, field, value)</dt><dd><tt>#Update&nbsp;one&nbsp;field&nbsp;for&nbsp;a&nbsp;all&nbsp;tuples<br>
+#Parameters&nbsp;-&nbsp;field&nbsp;to&nbsp;be&nbsp;updated,&nbsp;and&nbsp;the&nbsp;new&nbsp;value<br>
+#Return&nbsp;-&nbsp;returns&nbsp;true&nbsp;unless&nbsp;exception&nbsp;is&nbsp;thrown</tt></dd></dl>
+
+<dl><dt><a name="Class-setFieldByID"><strong>setFieldByID</strong></a>(self, id, field, value)</dt><dd><tt>#Update&nbsp;one&nbsp;field&nbsp;for&nbsp;a&nbsp;specific&nbsp;tuple<br>
+#Parameters&nbsp;-&nbsp;tuple&nbsp;id,&nbsp;field&nbsp;to&nbsp;be&nbsp;updated,&nbsp;and&nbsp;the&nbsp;new&nbsp;value<br>
+#Return&nbsp;-&nbsp;returns&nbsp;true&nbsp;unless&nbsp;exception&nbsp;is&nbsp;thrown</tt></dd></dl>
+
+<dl><dt><a name="Class-setFields"><strong>setFields</strong></a>(self, setFields, setValues=(), whereFields=(), whereValues=())</dt><dd><tt>#Update&nbsp;multiple&nbsp;fields&nbsp;for&nbsp;all&nbsp;tuples<br>
+#Parameters&nbsp;-&nbsp;fields&nbsp;to&nbsp;be&nbsp;updated,&nbsp;new&nbsp;values,&nbsp;optional&nbsp;where&nbsp;fields&nbsp;and&nbsp;values<br>
+#Return&nbsp;-&nbsp;returns&nbsp;true&nbsp;unless&nbsp;exception&nbsp;is&nbsp;thrown</tt></dd></dl>
+
+<dl><dt><a name="Class-setFieldsByID"><strong>setFieldsByID</strong></a>(self, id, fields, values)</dt><dd><tt>#Update&nbsp;multiple&nbsp;fields&nbsp;for&nbsp;a&nbsp;specific&nbsp;tuple<br>
+#Parameters&nbsp;-&nbsp;tuple&nbsp;id,&nbsp;fields&nbsp;to&nbsp;be&nbsp;updated,&nbsp;and&nbsp;the&nbsp;new&nbsp;values<br>
+#Return&nbsp;-&nbsp;returns&nbsp;true&nbsp;unless&nbsp;exception&nbsp;is&nbsp;thrown</tt></dd></dl>
+
+<dl><dt><a name="Class-whereClause"><strong>whereClause</strong></a>(self, fields)</dt><dd><tt>#Clause&nbsp;helper<br>
+#Parameters&nbsp;-&nbsp;fields&nbsp;to&nbsp;be&nbsp;included&nbsp;in&nbsp;the&nbsp;clause<br>
+#Return&nbsp;-&nbsp;entire&nbsp;clause&nbsp;as&nbsp;string</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="dbTable.html#Table">dbTable.Table</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

@@ -1,0 +1,12 @@
+__pycache__/
+*.DS_Store
+.env
+.pytest_cache
+.cnf
+*.ll
+<<<<<<< HEAD
+/.vs/littlelearners/v16/.suo
+/.vs/slnx.sqlite
+=======
+.vscode/
+>>>>>>> matthew

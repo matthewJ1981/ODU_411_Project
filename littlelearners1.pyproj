@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f707f3bf-3840-4a5f-b03c-9c19a308cb7d}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>Macro\EmbeddedBrowser.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="backEnd\Docs\backEnd.html" />
+    <Content Include="backEnd\Docs\cActivity.html" />
+    <Content Include="backEnd\Docs\cChild.html" />
+    <Content Include="backEnd\Docs\cClass.html" />
+    <Content Include="backEnd\Docs\cHelpRequest.html" />
+    <Content Include="backEnd\Docs\cHelpResponse.html" />
+    <Content Include="backEnd\Docs\cMacroElement.html" />
+    <Content Include="backEnd\Docs\cParent.html" />
+    <Content Include="backEnd\Docs\cScheduleItem.html" />
+    <Content Include="database\Docs\changeCNF.html" />
+    <Content Include="database\Docs\changeCNFUnix.html" />
+    <Content Include="database\Docs\database.html" />
+    <Content Include="database\Docs\dbBubble.html" />
+    <Content Include="database\Docs\dbChild.html" />
+    <Content Include="database\Docs\dbClass.html" />
+    <Content Include="database\Docs\dbConnect.html" />
+    <Content Include="database\Docs\dbEnrolledIn.html" />
+    <Content Include="database\Docs\dbErrorCode.html" />
+    <Content Include="database\Docs\dbHelpRequest.html" />
+    <Content Include="database\Docs\dbHelpResponse.html" />
+    <Content Include="database\Docs\dbInputData.html" />
+    <Content Include="database\Docs\dbLogEntry.html" />
+    <Content Include="database\Docs\dbMemberOf.html" />
+    <Content Include="database\Docs\dbNavElemType.html" />
+    <Content Include="database\Docs\dbNavigationStep.html" />
+    <Content Include="database\Docs\dbParent.html" />
+    <Content Include="database\Docs\dbScheduleItem.html" />
+    <Content Include="database\Docs\dbTable.html" />
+    <Content Include="database\Docs\dbTestInit.html" />
+    <Content Include="database\Docs\dbUser.html" />
+    <Content Include="database\Docs\dbUserType.html" />
+    <Content Include="desktopApp\assets\images\avatar.png" />
+    <Content Include="desktopApp\assets\images\avatar_1.png" />
+    <Content Include="desktopApp\assets\images\avatar_2.png" />
+    <Content Include="desktopApp\assets\images\login_logo.png" />
+    <Content Include="desktopApp\assets\images\orange.png" />
+    <Content Include="images\login_logo.png" />
+    <Content Include="images\Test.png" />
+    <Content Include="login_logo.png" />
+    <Content Include="orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Automated_Testing\Google.py" />
+    <Compile Include="Automated_Testing\lil_tester.py" />
+    <Compile Include="backEnd\backEnd.py" />
+    <Compile Include="backEnd\cActivity.py" />
+    <Compile Include="backEnd\cChild.py" />
+    <Compile Include="backEnd\cClass.py" />
+    <Compile Include="backEnd\cHelpRequest.py" />
+    <Compile Include="backEnd\cHelpResponse.py" />
+    <Compile Include="backEnd\cMacroElement.py" />
+    <Compile Include="backEnd\cParent.py" />
+    <Compile Include="backEnd\cScheduleItem.py" />
+    <Compile Include="database\database.py" />
+    <Compile Include="database\dbActivity.py" />
+    <Compile Include="database\dbBubble.py" />
+    <Compile Include="database\dbChild.py" />
+    <Compile Include="database\dbClass.py" />
+    <Compile Include="database\dbConnect.py" />
+    <Compile Include="database\dbEnrolledIn.py" />
+    <Compile Include="database\dbErrorCode.py" />
+    <Compile Include="database\dbHelpRequest.py" />
+    <Compile Include="database\dbHelpResponse.py" />
+    <Compile Include="database\dbInputData.py" />
+    <Compile Include="database\dbLogEntry.py" />
+    <Compile Include="database\dbMacroElement.py" />
+    <Compile Include="database\dbMemberOf.py" />
+    <Compile Include="database\dbNavElemType.py" />
+    <Compile Include="database\dbNavigationStep.py" />
+    <Compile Include="database\dbParent.py" />
+    <Compile Include="database\dbScheduleItem.py" />
+    <Compile Include="database\dbTable.py" />
+    <Compile Include="database\dbTestInit.py" />
+    <Compile Include="database\dbUser.py" />
+    <Compile Include="database\dbUserType.py" />
+    <Compile Include="database\init.py" />
+    <Compile Include="database\__init__.py" />
+    <Compile Include="desktopApp\BaseScreen.py" />
+    <Compile Include="desktopApp\helper\helperMethods.py" />
+    <Compile Include="desktopApp\home\HomeScreen copy.py" />
+    <Compile Include="desktopApp\home\HomeScreen.py" />
+    <Compile Include="desktopApp\imageTest.py" />
+    <Compile Include="desktopApp\Main_Child.py" />
+    <Compile Include="desktopApp\Main_Parent.py" />
+    <Compile Include="desktopApp\parent\frontEnd\dashboard\dashboardMain.py" />
+    <Compile Include="desktopApp\parent\frontEnd\dashboard\pages\dashboard.py" />
+    <Compile Include="desktopApp\parent\frontEnd\dashboard\pages\help.py" />
+    <Compile Include="desktopApp\parent\frontEnd\dashboard\pages\manageAccount.py" />
+    <Compile Include="desktopApp\parent\frontEnd\dashboard\pages\manageClass.py" />
+    <Compile Include="desktopApp\parent\frontEnd\dashboard\pages\manageStudent.py" />
+    <Compile Include="desktopApp\parent\frontEnd\dashboard\pages\settings.py" />
+    <Compile Include="desktopApp\parent\frontEnd\dashboard\pages\studentInformation.py" />
+    <Compile Include="desktopApp\parent\frontEnd\dashboard\pages\viewFeedbackInfo.py" />
+    <Compile Include="desktopApp\parent\frontEnd\parentLogin.py" />
+    <Compile Include="desktopApp\parent\frontEnd\parentMain.py" />
+    <Compile Include="desktopApp\parent\frontEnd\parentRegister.py" />
+    <Compile Include="desktopApp\parent\frontEnd\parentWelcomeScreen.py" />
+    <Compile Include="desktopApp\raiseHand.py" />
+    <Compile Include="desktopApp\student\ChildEmbeddedBrowser.py" />
+    <Compile Include="desktopApp\student\frontEnd\childDesktop.py" />
+    <Compile Include="desktopApp\student\frontEnd\childMain.py" />
+    <Compile Include="desktopApp\student\frontEnd\studentWelcomeScreen.py" />
+    <Compile Include="littleLearners\littleLearners.py" />
+    <Compile Include="Macro\EmbeddedBrowser.py" />
+    <Compile Include="Macro\Listener.py" />
+    <Compile Include="Macro\MacroInstructions.py" />
+    <Compile Include="Macro\MacroMenu.py" />
+    <Compile Include="Macro\RecordMacro.py" />
+    <Compile Include="Macro\testMain.py" />
+    <Compile Include="Macro\ViewMacro.py" />
+    <Compile Include="Macro\__init__.py" />
+    <Compile Include="ShellStuff\changeCNFUnix.py" />
+    <Compile Include="ShellStuff\changeLineEndings.py" />
+    <Compile Include="Tests\database\dbActivity_test.py" />
+    <Compile Include="Tests\database\dbBubble_test.py" />
+    <Compile Include="Tests\database\dbChild_test.py" />
+    <Compile Include="Tests\database\dbClass_test.py" />
+    <Compile Include="Tests\database\dbEnrolledIn_test.py" />
+    <Compile Include="Tests\database\dbErrorCode_test.py" />
+    <Compile Include="Tests\database\dbHelpRequest_test.py" />
+    <Compile Include="Tests\database\dbHelpResponse_test.py" />
+    <Compile Include="Tests\database\dbInputData_test.py" />
+    <Compile Include="Tests\database\dbLogEntry_test.py" />
+    <Compile Include="Tests\database\dbMacroElement_test.py" />
+    <Compile Include="Tests\database\dbMemberOf_test.py" />
+    <Compile Include="Tests\database\dbNavElemType_test.py" />
+    <Compile Include="Tests\database\dbNavigationStep_test.py" />
+    <Compile Include="Tests\database\dbParent_test.py" />
+    <Compile Include="Tests\database\dbScheduleItem_test.py" />
+    <Compile Include="Tests\database\dbTable_test.py" />
+    <Compile Include="Tests\database\dbUserType_test.py" />
+    <Compile Include="Tests\database\dbUser_test.py" />
+    <Compile Include="Tests\database\db_test.py" />
+    <Compile Include="Tests\database\__init__.py" />
+    <Compile Include="Tests\__init__.py" />
+    <Compile Include="__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Automated_Testing" />
+    <Folder Include="backEnd" />
+    <Folder Include="backEnd\Docs" />
+    <Folder Include="database" />
+    <Folder Include="database\Docs" />
+    <Folder Include="desktopApp" />
+    <Folder Include="desktopApp\assets\" />
+    <Folder Include="desktopApp\assets\images" />
+    <Folder Include="desktopApp\helper" />
+    <Folder Include="desktopApp\home" />
+    <Folder Include="desktopApp\parent\" />
+    <Folder Include="desktopApp\parent\frontEnd" />
+    <Folder Include="desktopApp\parent\frontEnd\dashboard" />
+    <Folder Include="desktopApp\parent\frontEnd\dashboard\pages" />
+    <Folder Include="desktopApp\student" />
+    <Folder Include="desktopApp\student\frontEnd" />
+    <Folder Include="images" />
+    <Folder Include="littleLearners" />
+    <Folder Include="Macro" />
+    <Folder Include="ShellStuff" />
+    <Folder Include="Tests" />
+    <Folder Include="Tests\database" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
